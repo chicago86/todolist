@@ -1,0 +1,316 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+input, label{
+    display:block;
+}
+.warn{
+    display: block;
+    padding: 100px 0;
+}
+.login_page{
+    width: 400px;
+    border: 2px solid blue;
+    margin: 0 auto;
+    
+    
+}
+label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.login_title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email, .password{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 80%;
+   
+}
+
+input[placeholder]{
+    padding-left: 20px;
+    font-size: 16px;
+}
+.btn_login{
+    color: white;
+    background-color: blue;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+.btn_login:hover{
+    background-color: rgb(139, 108, 226);
+    cursor: pointer;
+}
+.examination{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items:center;
+}
+
+.container{
+    width: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+.login{
+    display: none;
+}
+.todo__title{
+    text-align: center;
+}
+.todo__inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.before{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+.todo-text, .todotext_new{
+    width: 400px;
+    
+}
+
+.buttons{
+    width: 20%;
+    padding-right: 5px;
+    text-align: center;
+}
+.item{
+    width: 80%;
+    text-align: center;
+}
+.date_todo, .importance_todo, .todo-text, .date_new, .importance_new, .todotext_new{
+    border: none;
+    border-bottom: 2px solid blue;
+    padding-top: 20px;
+}
+
+.todo-text[placeholder]{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.btn_todo{
+    color: white;
+    background-color: blue;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn_todo:hover{
+    background-color: rgb(139, 108, 226);
+    cursor: pointer;
+}
+.btn__dell, .btn__edit {
+    color: white;
+    background-color: blue;
+    padding: 10px 0;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 5%;
+    text-align: center;
+}
+.edit:hover, .done:hover, .delite:hover{
+    background-color: rgb(139, 108, 226);
+    cursor: pointer;
+}
+.bg_end{
+    background-color: rgb(161, 56, 56);
+}
+
+#modfl-delete{
+    display: none;
+}
+.display_delite{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items:center;
+    width: 250px;
+    border: 10px solid grey;
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+.display_edit{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items:center;
+    width: 250px;
+    border: 10px solid grey;
+    position: absolute;
+    top: 30%;
+    right: 40px;
+}
+.btn__del-edit + .btn__del-edit{
+    margin-left: 20px;
+}
+.btn__dell{
+    margin-right: 10px;
+}
+.btn__dell, .btn__edit{
+    color: white;
+    background-color: blue;
+    padding: 10px 0px;
+    width: 70px;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+.btn__del-edit:hover{
+    background-color: rgb(139, 108, 226);
+    cursor: pointer;
+}
+
+#modal-edit{
+    display: none;
+}
+.item_edit{
+    width: 200px;
+    margin-bottom: 15px;
+}
+.choice{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.btn__item-edit + .btn__item-edit{
+    margin-left: 20px;
+}
+.btn__item-edit {
+    color: white;
+    background-color: blue;
+    padding: 10px 0px;
+    width: 70px;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+.btn__item-edit:hover{
+    background-color: rgb(139, 108, 226);
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+}
+
+.filter{
+    display: flex;
+    padding: 40px 0;
+}
+.button_type_date{
+    margin-right: 20px;
+}
+.button_type_unimportant{
+    margin-right: 20px;
+}
+.button_type_date, .button_type_unimportant{
+border: 2px solid blue;
+padding: 20px 20px;
+border-radius: 5px;
+background-color: rgb(139, 108, 226);
+color: black;
+}
+#elastic{
+    border-radius: 5px;
+    width: 400px;
+}
+.active, .active1{
+    background-color: rgb(35, 26, 61);
+    color:white;
+}
+
+.hide{
+    display: none;
+}
+
+.todo_item, .item, .buttons{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.buttons{
+    margin-right: 50px;
+}
+.item li{
+    margin-left: 50px;
+    list-style: none;
+}
+.btn__complete{
+    margin-right: 20px;
+}
+.todo_item{
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+    background-color:yellow;
+    color: red;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.todo_item.checked{
+    background: darkblue;
+    opacity: 0.5;
+}
+.todo_item.dell{
+    animation: opacity 1s ease-in-out;
+}
+@keyframes opacity{
+    form{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}

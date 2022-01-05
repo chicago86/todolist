@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="login" class="warn">
+
+        
+            
+                <div class="login_page row">
+                    <h1 class="login_title">Login page</h1>
+                    <div class="form">
+                        <label for="email">Email</label><input type="email" name="email" class="email" placeholder="Enter you email" required>
+                        <div class="examination">
+                            <div class="answer_email-left">Невірно</div>
+                            <!-- /.right -->
+                            
+                        </div>
+                        <label for="password">Password</label><input type="password" name="password" class="password" placeholder="Enter your password, 8 min, 12 max" required>
+                       
+                        <!-- /.pass_nevirno -->
+                        <div class="examination">
+                            <div class="answer_pass-right">Невірно</div>
+                            <!-- /.right -->
+                            
+                        </div>
+                        <!-- /.examination -->
+                        <button class="btn_login">login</button>
+                    </div>
+                    
+                </div>
+                
+          
+    </div>
+ 
+
+
+    <div class="container">
+        <div id="login" class="login">
+                <div class="todo">
+                    <h1 class="todo__title">Todo List</h1>
+                    <div class="todo__inputs" id="form">
+
+                            <label>Дата виконанння:
+                            <input type="date" name="data"
+                            min="2021-01-01" max="2022-12-31" class="date_todo" required>
+                        </label>
+                            <label>Важливість
+                                <select class="importance_todo" name="importance" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select></label>
+                        <label>Текст завдання
+                        <input type="text" class="todo-text" required placeholder="Завдання" name="todo-text"></label>
+                        <button class="btn_todo" type="submit">Додати</button>
+                    </div>
+                    <!-- /.todo__inputs -->
+                    <!-- /.todo__title -->
+                </div>
+                <div>
+                    <div class="filter">
+                        <button class="button button_type_date" data-filter="date">Сортування по даті</button>
+                        <!-- <button class="button button_type_importance" data-filter="importance">Importance</button> -->
+                        <button class="button button_type_unimportant" data-filter="unimportant">Важливість таска</button>
+                        <input type="text" id="elastic" placeholder="Пошук за символом">
+                    </div>
+                </div>
+
+                <div class="todo-wrapper">
+
+                </div>
+                
+        </div>
+        <!-- /#login -->
+    </div>
+
+
+    <div id="modfl-delete">
+        <div class="display_delite">
+            <h3>Edit text</h3>
+            <div class="choice">
+            <button class="btn__del-edit no">No</button>
+            <button class="btn__del-edit yes">Yes</button>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /#modfl-delete -->
+
+    <div id="modal-edit">
+        <div class="display_edit">
+            <h3>Edit text</h3>
+            <textarea name="edit" class="item_edit" cols="30" rows="10"></textarea>
+            <div class="choice">
+                <button class="btn__item-edit cancel">cancel</button>
+                <button class="btn__item-edit save">save</button>
+            </div>
+        </div>
+    </div>
+    <!-- /#modal-edit -->
+<script src="app.js"></script>
+</body>
+</html>
